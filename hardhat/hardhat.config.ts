@@ -39,7 +39,7 @@ export default defineConfig({
       chainType: "l1",
       url: "https://rpc.ritualfoundation.org",
       chainId: 1979,
-      accounts: [configVariable("DEPLOYER_PRIVATE_KEY")],
+      accounts: process.env.DEPLOYER_PRIVATE_KEY ? [process.env.DEPLOYER_PRIVATE_KEY] : [],
     },
   },
 });

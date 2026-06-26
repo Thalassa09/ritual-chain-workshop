@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import hre from "hardhat";
 import { keccak256, encodePacked, toBytes } from "viem";
+import { describe, it } from "node:test";
 
 describe("AIJudge Commit-Reveal", function () {
   async function deployAIJudge() {
